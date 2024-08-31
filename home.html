@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Muheet</title>
+    <!--for normalize css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--swipper library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--my css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--for the icon -->
+    <link rel="icon" href="assets/logo.svg" />
+  </head>
+
+  <body>
+    <div class="home-page">
+      <!--start navbar -->
+      <nav>
+        <div class="container">
+          <img src="assets/logo.svg" alt="logo" class="logo" />
+          <img src="assets/logo-part.svg" alt="" class="logo-part" />
+          <img src="assets/menu.svg" alt="" class="menu" />
+
+          <!-- start list -->
+          <ul>
+            <li>
+              <a href="#"> <img src="assets/images-icon.png" alt="" />الصور </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/videos-icon.png" alt="" /> الفيديوهات
+              </a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/vector-icon.png" alt="" /> فيكتور</a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/open-files-icon.png" alt="" /> ملفات مفتوحة</a
+              >
+            </li>
+
+            <li>
+              <a href="#"
+                ><img src="assets/vocal-icon.png" alt="" /> الصوتيات</a
+              >
+            </li>
+          </ul>
+          <!-- end list -->
+          <!-- start language -->
+          <div class="language">
+            <img src="assets/langauge-icon.png" alt="" />
+
+            <label for="language" onclick="">EN</label>
+          </div>
+          <!-- end language -->
+
+          <div class="buttons">
+            <!-- start log in button -->
+            <a href="#" class="log-in-BT BT-settings"> تسجيل الدخول</a>
+            <!-- end log in button -->
+            <!-- start sign up button -->
+            <a href="#" class="sign-up-BT BT-settings">إنشاء حساب جديد</a>
+            <!-- end sign up button -->
+          </div>
+        </div>
+      </nav>
+      <!--end navbar -->
+
+      <!-- start content -->
+
+      <div class="container">
+        <div class="content">
+          <!-- start explore square -->
+          <section class="explore-sq">
+            <!-- start text -->
+            <label for="explore-sq"
+              ><h1>محيط المنتجات الرقمية</h1>
+              <h2>استكشف عالم المنتجات الرقمية المذهل على منصتنا</h2></label
+            >
+            <!-- end text -->
+            <!-- start search field -->
+            <div class="search-field">
+              <select name="classify" id="classification">
+                <option value="all">الكل</option>
+                <option value="part">جزء</option>
+              </select>
+              <input type="text" placeholder="ابحث عن الملحقات الرقمية.." />
+              <img src="assets/search.svg" alt="search icon" />
+            </div>
+            <!-- end search field -->
+            <!-- start types -->
+            <div class="types">
+              <label for="" class="type">
+                <img src="assets/search.svg" alt="search icon" /> ايقونات</label
+              ><label for="" class="type">
+                <img src="assets/search.svg" alt="search icon" />موكاب</label
+              ><label for="" class="type">
+                <img src="assets/search.svg" alt="search icon" />3D</label
+              >
+            </div>
+            <!-- end types -->
+          </section>
+          <!-- end explore square -->
+
+          <!-- start sections -->
+          <section class="sections">
+            <a href="#" class="section pics"
+              ><img src="assets/pics-image.png" alt="" />
+            </a>
+            <a href="#" class="section videos"
+              ><img src="assets/videos-image.png" alt="" />
+            </a>
+            <a href="#" class="section vector"
+              ><img src="assets/vector-image.png" alt="" />
+            </a>
+            <a href="#" class="section open-files"
+              ><img src="assets/open-files-image.png" alt="" />
+            </a>
+            <a href="#" class="section vocal"
+              ><img src="assets/vocal-image.png" alt="" />
+            </a>
+          </section>
+          <!-- end sections -->
+
+          <!-- start section title -->
+          <div class="section-title">
+            <h3>الصور الحديثة</h3>
+            <h4>أكثر من 300 صورة</h4>
+
+            <a href="#" class="more">المزيد</a>
+          </div>
+          <!-- end section title -->
+
+          <!-- start images section -->
+          <section class="images">
+            <div class="image-container">
+              <img src="assets/image1.jpg" alt="" />
+            </div>
+            <div class="image-container">
+              <img src="assets/image2.jpg" alt="" />
+            </div>
+            <div class="image-container">
+              <img src="assets/image3.jpg" alt="" />
+            </div>
+            <div class="image-container">
+              <img src="assets/image4.jpg" alt="" />
+            </div>
+            <div class="image-container">
+              <img src="assets/image5.jpg" alt="" />
+            </div>
+            <div class="image-container">
+              <img src="assets/image6.jpg" alt="" />
+            </div>
+            <div class="image-container">
+              <img src="assets/image7.jpg" alt="" />
+            </div>
+          </section>
+          <!-- end images section -->
+
+          <!-- start section title -->
+          <div class="section-title">
+            <h3>الفيديوهات الحديثة</h3>
+            <h4>أكثر من 100 صورة</h4>
+
+            <a href="#" class="more">المزيد</a>
+          </div>
+          <!-- end section title -->
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+
+    <script>
+      const photoList = document.querySelector(".images");
+      const lastPhoto = photoList.children[5];
+      const textElement = document.createElement("a");
+      textElement.setAttribute("href", "#");
+      textElement.textContent = "المزيد...";
+      lastPhoto.appendChild(textElement);
+
+      const imageContainers = document.querySelectorAll(".image-container");
+
+      imageContainers.forEach((container, index) => {
+        if (index < 5) {
+          const htmlToInsert = `
+    <div class="upper">
+      <div class="personal-info">
+        <img src="assets/profile.jpg" alt="" class="pic" />
+        <h3 class="name">Majd Alozebi</h3>
+      </div>
+      <div class="img-buttons">
+        <div class="like img-btn" onclick=""></div>
+        <div class="basket img-btn" onclick=""></div>
+      </div>
+    </div>
+    <label for="image-container" class="down">
+      كهربائي يمارس الكهرباء
+    </label>
+  `;
+
+          const overlayElement = document.createElement("div");
+          overlayElement.innerHTML = htmlToInsert;
+          overlayElement.classList.add("overlay-element");
+
+          container.appendChild(overlayElement);
+        }
+      });
+    </script>
+  </body>
+</html>
