@@ -104,7 +104,7 @@ function addContent(containerName) {
     textElement.textContent = "المزيد...";
     textElement.classList.add("more");
     element.appendChild(textElement);
-    // just to avoid runtime error i split video and image
+    // avoiding runtime error i split video and image
     if (containerName == ".video-container") {
       elementVideo.style.filter = "brightness(.4)";
     } else if (containerName == ".vocal-container") {
@@ -140,6 +140,7 @@ addContent(".vocal-container");
 //   });
 // });
 
+// too change BG-color of vocal containers
 function editSpecificContainers() {
   const vocalContainers = document.querySelectorAll(".vocal-container");
 
