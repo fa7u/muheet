@@ -54,7 +54,7 @@ function addContent(containerName) {
     const elementVideo = element.querySelector("video");
 
     const textElement = document.createElement("a");
-    textElement.setAttribute("href", "#");
+    textElement.setAttribute("href", "videos_details.html");
     textElement.textContent = "المزيد...";
     textElement.classList.add("more");
     element.appendChild(textElement);
@@ -65,7 +65,7 @@ function addContent(containerName) {
     const element = photoList[5];
     const elementVideo = element.querySelector("video");
     const textElement = document.createElement("a");
-    textElement.setAttribute("href", "#");
+    textElement.setAttribute("href", "videos_page.html");
     textElement.textContent = "المزيد...";
     textElement.classList.add("more");
     element.appendChild(textElement);

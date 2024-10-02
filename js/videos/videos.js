@@ -33,7 +33,7 @@ function addContent(containerName) {
     container.appendChild(overlayElement);
 
     const textElement = document.createElement("a");
-    textElement.setAttribute("href", "#");
+    textElement.setAttribute("href", "videos_details.html");
     textElement.classList.add("inner-link");
     container.appendChild(textElement);
   });

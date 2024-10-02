@@ -54,7 +54,7 @@ function addContent(containerName) {
     const elementImg = element.querySelector("img");
 
     const textElement = document.createElement("a");
-    textElement.setAttribute("href", "#");
+    textElement.setAttribute("href", "vectors_details.html");
     textElement.textContent = "المزيد...";
     textElement.classList.add("more");
     element.appendChild(textElement);
@@ -65,7 +65,7 @@ function addContent(containerName) {
     const element = photoList[5];
     const elementImg = element.querySelector("img");
     const textElement = document.createElement("a");
-    textElement.setAttribute("href", "#");
+    textElement.setAttribute("href", "vectors_page.html");
     textElement.textContent = "المزيد...";
     textElement.classList.add("more");
     element.appendChild(textElement);

@@ -54,7 +54,7 @@ function addContent(containerName) {
     const elementImg = element.querySelector("img");
 
     const textElement = document.createElement("a");
-    textElement.setAttribute("href", "#");
+    textElement.setAttribute("href", "images_details.html");
     textElement.textContent = "المزيد...";
     textElement.classList.add("more");
     element.appendChild(textElement);
@@ -66,7 +66,7 @@ function addContent(containerName) {
     const elementVideo = element.querySelector("video");
     const elementImg = element.querySelector("img");
     const textElement = document.createElement("a");
-    textElement.setAttribute("href", "#");
+    textElement.setAttribute("href", "images_page.html");
     textElement.textContent = "المزيد...";
     element.appendChild(textElement);
     elementImg.style.filter = "brightness(.4)";

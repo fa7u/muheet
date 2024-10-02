@@ -46,7 +46,7 @@ function addContent(containerName) {
     const element = photoList[6];
 
     const textElement = document.createElement("a");
-    textElement.setAttribute("href", "#");
+    textElement.setAttribute("href", "vocals_details.html");
     textElement.textContent = "المزيد...";
     textElement.classList.add("more");
     element.appendChild(textElement);
@@ -55,7 +55,7 @@ function addContent(containerName) {
   } else {
     const element = photoList[5];
     const textElement = document.createElement("a");
-    textElement.setAttribute("href", "#");
+    textElement.setAttribute("href", "vocals_page.html");
     textElement.textContent = "المزيد...";
     textElement.classList.add("more");
 
