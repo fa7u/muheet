@@ -18,7 +18,6 @@ function addContent(containerName) {
       `;
 
   containers.forEach((container, index) => {
-    console.log("holaa");
     const overlayElement = document.createElement("div");
     // to change content according to section
 
@@ -27,7 +26,7 @@ function addContent(containerName) {
     overlayElement.classList.add("overlay-element");
 
     container.appendChild(overlayElement);
-    if (index !== 6) {
+    if (index !== 7) {
       const textElement = document.createElement("a");
       textElement.setAttribute("href", "#");
       textElement.classList.add("inner-link");
@@ -63,7 +62,6 @@ function addContent(containerName) {
     elementImg.style.filter = "brightness(.4)";
   } else {
     const element = photoList[5];
-    const elementVideo = element.querySelector("video");
     const elementImg = element.querySelector("img");
     const textElement = document.createElement("a");
     textElement.setAttribute("href", "images_page.html");
@@ -74,3 +72,4 @@ function addContent(containerName) {
 }
 
 addContent(".image-container");
+addContent(".desc-container");
