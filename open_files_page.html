@@ -18,7 +18,67 @@
   </head>
 
   <body>
-    <div class="sign-in-page">
+    <div class="open-files-page">
+      <!--start navbar -->
+      <nav>
+        <div class="container">
+          <img src="assets/logo.svg" alt="logo" class="logo" />
+          <img src="assets/logo-part.svg" alt="" class="logo-part" />
+          <img src="assets/menu.svg" alt="" class="menu" />
+
+          <!-- start list -->
+          <ul>
+            <li>
+              <a href="images_page.html">
+                <img src="assets/images-icon.png" alt="" />الصور
+              </a>
+            </li>
+            <li>
+              <a href="videos_page.html"
+                ><img src="assets/videos-icon.png" alt="" /> الفيديو
+              </a>
+            </li>
+            <li>
+              <a href="vectors_page.html"
+                ><img src="assets/vector-icon.png" alt="" /> فيكتور</a
+              >
+            </li>
+            <li>
+              <a href="open_files_page.html"
+                ><img src="assets/open-files-icon.png" alt="" /> ملفات مفتوحة</a
+              >
+            </li>
+
+            <li>
+              <a href="voclas_page.html"
+                ><img src="assets/vocal-icon.png" alt="" /> الصوتيات</a
+              >
+            </li>
+          </ul>
+          <!-- end list -->
+          <!-- start language -->
+          <div class="language">
+            <img src="assets/langauge-icon.png" alt="" />
+
+            <label for="language" onclick="">EN</label>
+          </div>
+          <!-- end language -->
+
+          <div class="buttons">
+            <!-- start log in button -->
+            <a href="login_page.html" class="log-in-BT BT-settings">
+              تسجيل الدخول</a
+            >
+            <!-- end log in button -->
+            <!-- start sign up button -->
+            <a href="sign_up_page.html" class="sign-up-BT BT-settings"
+              >إنشاء حساب جديد</a
+            >
+            <!-- end sign up button -->
+          </div>
+        </div>
+      </nav>
+      <!--end navbar -->
       <div class="container">
         <div class="content">
           <!-- start search field -->
@@ -84,6 +144,43 @@
           <!-- end pages count -->
         </div>
       </div>
+
+      <!-- start footer -->
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="logo"></div>
+
+            <div class="links">
+              <a href="#">عن محيط</a>
+              <a href="#">الاسئلة الشائعة</a>
+              <a href="#">التواصل</a>
+              <a href="#">سياسة الخصوصية</a>
+              <a href="#">الترخيص</a>
+            </div>
+            <div class="social-media">
+              <h2 class="follow-us">تابعنا</h2>
+              <div class="programs">
+                <a href="#" class="prog">
+                  <img src="assets/whatsapp.svg" alt="" />
+                </a>
+                <a href="#" class="prog">
+                  <img src="assets/insta.svg" alt="" />
+                </a>
+                <a href="#" class="prog">
+                  <img src="assets/x.svg" alt="" />
+                </a>
+                <a href="#" class="prog"
+                  >x
+                  <img src="assets/facebook.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
     </div>
+    <script src="js/open_files/open_files.js"></script>
   </body>
 </html>

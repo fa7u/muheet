@@ -849,6 +849,7 @@ footer .container .social-media .programs .prog {
 @media (max-width: 768px) {
   .home-page .container .content .sections {
     height: 115px;
+    justify-content: flex-start;
   }
 }
 
@@ -5040,11 +5041,7 @@ footer .container .social-media .programs .prog {
 /* ######################################################################################## */
 
 /* start sign-up page */
-.sign-up-page .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .sign-up-page .container .content {
   width: 100%;
   display: flex;
@@ -5091,12 +5088,6 @@ footer .container .social-media .programs .prog {
   width: 100%;
 }
 
-.sign-up-page .container .content form div .pass-container {
-  flex-direction: row;
-  border: 1px solid rgba(200, 201, 204, 1);
-  border-radius: 8px;
-  padding: 0 5px;
-}
 .sign-up-page .container .content form div label {
   font-size: 12px;
   /* font-weight: 500; */
@@ -5109,11 +5100,9 @@ footer .container .social-media .programs .prog {
   border-radius: 8px;
   padding: 8px;
 }
-.sign-up-page .container .content form .password input {
-  border: none;
-  width: 100%;
-}
+
 .sign-up-page .container .content form input[type="submit"] {
+  width: 100%;
   padding: 10px 25px;
   border-radius: 8px;
   border: none;
@@ -5239,12 +5228,8 @@ footer .container .social-media .programs .prog {
 /* end sign-up page */
 /* ######################################################################################## */
 
-/* start sign-up page */
-.login-page .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* start login page */
+
 .login-page .container .content {
   width: 100%;
   display: flex;
@@ -5291,12 +5276,6 @@ footer .container .social-media .programs .prog {
   width: 100%;
 }
 
-.login-page .container .content form div .pass-container {
-  flex-direction: row;
-  border: 1px solid rgba(200, 201, 204, 1);
-  border-radius: 8px;
-  padding: 0 5px;
-}
 .login-page .container .content form div label {
   font-size: 12px;
   /* font-weight: 500; */
@@ -5309,11 +5288,9 @@ footer .container .social-media .programs .prog {
   border-radius: 8px;
   padding: 8px;
 }
-.login-page .container .content form .password input {
-  border: none;
-  width: 100%;
-}
+
 .login-page .container .content form input[type="submit"] {
+  width: 100%;
   padding: 10px 25px;
   border-radius: 8px;
   border: none;
@@ -5434,7 +5411,7 @@ footer .container .social-media .programs .prog {
   }
 }
 /* end left square */
-/* end sign-up page */
+/* end login page */
 /* ######################################################################################## */
 
 /* start basket page */
