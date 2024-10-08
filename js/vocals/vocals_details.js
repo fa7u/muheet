@@ -60,7 +60,6 @@ function addContent(containerName) {
     textElement.classList.add("more");
 
     element.appendChild(textElement);
-    console.log(textElement);
   }
 }
 
