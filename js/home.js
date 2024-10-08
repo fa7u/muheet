@@ -9,7 +9,7 @@ function addContent(containerName) {
           </div>
           <div class="container-buttons">
             <div class="like container-btn" onclick=""></div>
-            <div class="basket container-btn" onclick=""></div>
+            <div class="cart container-btn" onclick=""></div>
           </div>
         </div>
         <label for="image-container" class="bottom">
@@ -24,7 +24,7 @@ function addContent(containerName) {
                       </div>
                       <div class="container-buttons">
                         <div class="like container-btn" onclick=""></div>
-                        <div class="basket container-btn" onclick=""></div>
+                        <div class="cart container-btn" onclick=""></div>
                       </div>
                     </div>
                     <label for="image-container" class="time"> 00:26 </label>
@@ -44,16 +44,39 @@ function addContent(containerName) {
                   </div>`;
 
   containers.forEach((container, index) => {
-    console.log("holaa");
     const overlayElement = document.createElement("div");
     // to change content according to section
 
     if (containerName == ".video-container") {
       overlayElement.innerHTML = videoHtml;
+      const textElement = document.createElement("a");
+      textElement.setAttribute("href", "videos_details.html");
+      textElement.classList.add("inner-link");
+      container.appendChild(textElement);
     } else if (containerName == ".vocal-container") {
       overlayElement.innerHTML = vocalHtml;
+      const textElement = document.createElement("a");
+      textElement.setAttribute("href", "vocals_details.html");
+      textElement.classList.add("inner-link");
+      container.appendChild(textElement);
+    } else if (containerName == ".open-file-container") {
+      overlayElement.innerHTML = imgHtml;
+      const textElement = document.createElement("a");
+      textElement.setAttribute("href", "open_files_details.html");
+      textElement.classList.add("inner-link");
+      container.appendChild(textElement);
+    } else if (containerName == ".vector-container") {
+      overlayElement.innerHTML = imgHtml;
+      const textElement = document.createElement("a");
+      textElement.setAttribute("href", "vectors_details.html");
+      textElement.classList.add("inner-link");
+      container.appendChild(textElement);
     } else {
       overlayElement.innerHTML = imgHtml;
+      const textElement = document.createElement("a");
+      textElement.setAttribute("href", "images_details.html");
+      textElement.classList.add("inner-link");
+      container.appendChild(textElement);
     }
 
     overlayElement.classList.add("overlay-element");
@@ -83,11 +106,23 @@ function addContent(containerName) {
     const elementImg = element.querySelector("img");
 
     const textElement = document.createElement("a");
-    textElement.setAttribute("href", "#");
     textElement.textContent = "المزيد...";
+
     textElement.classList.add("more");
+    if (containerName == ".image-container") {
+      textElement.setAttribute("href", "images_page.html");
+    } else if (containerName == ".video-container") {
+      textElement.setAttribute("href", "videos_page.html");
+    } else if (containerName == ".vector-container") {
+      textElement.setAttribute("href", "vectors_page.html");
+    } else if (containerName == ".open-file-container") {
+      textElement.setAttribute("href", "open_files_page.html");
+    } else {
+      textElement.setAttribute("href", "vocals_page.html");
+    }
+
     element.appendChild(textElement);
-    element.querySelector(".overlay-element").style.display = "none";
+    element.querySelector(".overlay-element").style.visibility = "hidden";
     if (containerName == ".video-container") {
       elementVideo.style.filter = "brightness(.4)";
     } else if (containerName == ".vocal-container") {
@@ -100,9 +135,20 @@ function addContent(containerName) {
     const elementVideo = element.querySelector("video");
     const elementImg = element.querySelector("img");
     const textElement = document.createElement("a");
-    textElement.setAttribute("href", "#");
     textElement.textContent = "المزيد...";
     textElement.classList.add("more");
+    if (containerName == ".image-container") {
+      textElement.setAttribute("href", "images_page.html");
+    } else if (containerName == ".video-container") {
+      textElement.setAttribute("href", "videos_page.html");
+    } else if (containerName == ".vector-container") {
+      textElement.setAttribute("href", "vectors_page.html");
+    } else if (containerName == ".open-file-container") {
+      textElement.setAttribute("href", "open_files_page.html");
+    } else {
+      textElement.setAttribute("href", "vocals_page.html");
+    }
+
     element.appendChild(textElement);
     // avoiding runtime error i split video and image
     if (containerName == ".video-container") {

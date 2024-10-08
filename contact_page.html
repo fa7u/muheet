@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="css/all.min.css" />
 
     <!--for the icon -->
-    <link rel="icon" href="assets/logo-part.svg" />
+    <link rel="icon" href="assets/logo.svg" />
   </head>
 
   <body>
-    <div class="open-files-page">
+    <div class="contact-page">
       <!--start navbar -->
       <nav>
         <div class="container">
@@ -77,6 +77,8 @@
         </div>
       </nav>
       <!--end navbar -->
+
+      <!-- start content -->
       <div class="container">
         <div class="content">
           <!-- start search field -->
@@ -90,59 +92,97 @@
           </div>
           <!-- end search field -->
           <hr />
-          <!-- start open-files container  -->
-          <section class="open-files-container">
-            <div class="open-file-container main-container">
-              <img src="assets/summer.jpg" alt="" />
-            </div>
-            <div class="open-file-container main-container">
-              <img src="assets/flower.jpg" alt="" />
-            </div>
-            <div class="open-file-container main-container">
-              <img src="assets/fruits.jpg" alt="" />
-            </div>
-            <div class="open-file-container main-container">
-              <img src="assets/apples.jpg" alt="" />
-            </div>
-            <div class="open-file-container main-container">
-              <img src="assets/fruits.jpg" alt="" />
-            </div>
-            <div class="open-file-container main-container">
-              <img src="assets/apples.jpg" alt="" />
-            </div>
-            <div class="open-file-container main-container">
-              <img src="assets/fruits.jpg" alt="" />
-            </div>
-            <div class="open-file-container main-container">
-              <img src="assets/apples.jpg" alt="" />
-            </div>
-            <div class="open-file-container main-container">
-              <img src="assets/fruits.jpg" alt="" />
-            </div>
-            <div class="open-file-container main-container">
-              <img src="assets/apples.jpg" alt="" />
-            </div>
-            <div class="open-file-container main-container">
-              <img src="assets/fruits.jpg" alt="" />
-            </div>
-            <div class="open-file-container main-container">
-              <img src="assets/apples.jpg" alt="" />
-            </div>
-          </section>
-          <!-- end open-files content  -->
+          <h2 class="title">تواصل معنا</h2>
+          <div class="inner-content">
+            <div class="client-info">
+              <div class="first-name">
+                <label> <span class="req">*</span> الاسم الاول</label>
+                <input type="text" required placeholder="ادخل الاسم الاول" />
+              </div>
+              <div class="last-name">
+                <label> <span class="req">*</span> الاسم الاخير</label>
+                <input type="text" required placeholder="ادخل الاسم الاخير" />
+              </div>
+              <div class="email">
+                <label> <span class="req">*</span> البريد الالكتروني</label>
+                <input
+                  type="email"
+                  required
+                  placeholder="ادخل البريد الالكتروني"
+                />
+              </div>
+              <div class="phone-number">
+                <label> رقم الجوال<span class="opt">(اختياري)</span></label>
+                <div class="phoneNO-container">
+                  <select name="zipcode" id="zipcode">
+                    <option value="ye">00967</option>
+                    <option value="sa">00966</option>
+                  </select>
+                  <input type="tel" required placeholder="000 000 000" />
+                </div>
+              </div>
+              <div class="message-title">
+                <label>عنوان الرسالة</label>
+                <input type="text" required placeholder="اكتب عنوان الرسالة" />
+              </div>
+              <div class="message-content">
+                <label>محتوى الرسالة</label>
+                <textarea
+                  name="message-content"
+                  id="message-content"
+                  placeholder="اكتب محتوى الرسالة"
+                ></textarea>
+              </div>
 
-          <!-- start pages count -->
-          <div class="pages-count">
-            <a href="#" class="next-page-BT">الصفحة التالية</a>
-            <p>
-              صفحة <span class="blue-text">1</span> من
-              <span class="blue-text">5</span>
-            </p>
+              <input type="submit" class="send" />
+            </div>
+
+            <div class="contact-card">
+              <h2 class="contact-muheet">تواصل مع محيـــط</h2>
+              <div class="phone-number-sq">
+                <label for="" class="phone-title-cont">
+                  <img src="assets/call-icon.svg" alt="" class="call-icon" />
+                  <h3 class="phone-title">رقم الجوال</h3>
+                </label>
+                <label for="" class="phone-number-cont">
+                  <h4 class="phone-number">967-034-322</h4>
+                  <button class="call-copy-icon"></button>
+                </label>
+              </div>
+              <div class="mail-sq">
+                <label for="" class="mail-title-cont">
+                  <img src="assets/mail-icon.svg" alt="" class="call-icon" />
+                  <h3 class="mail-title">البريد الالكتروني</h3>
+                </label>
+                <label for="" class="mail-cont">
+                  <h4 class="maul">mohet@company.ye</h4>
+                  <button class="copy-icon"></button>
+                </label>
+              </div>
+
+              <div class="social-media">
+                <h2 class="follow-us">تابعنا</h2>
+                <div class="programs">
+                  <a href="#" class="prog">
+                    <img src="assets/whatsapp.svg" alt="" />
+                  </a>
+                  <a href="#" class="prog">
+                    <img src="assets/insta.svg" alt="" />
+                  </a>
+                  <a href="#" class="prog">
+                    <img src="assets/x.svg" alt="" />
+                  </a>
+                  <a href="#" class="prog"
+                    >x
+                    <img src="assets/facebook.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- end pages count -->
         </div>
       </div>
-
+      <!-- end content -->
       <!-- start footer -->
       <footer>
         <div class="container">
@@ -179,6 +219,5 @@
       </footer>
       <!-- end footer -->
     </div>
-    <script src="js/open_files/open_files.js"></script>
   </body>
 </html>

@@ -9,7 +9,7 @@ function addContent(containerName) {
           </div>
           <div class="container-buttons">
             <div class="like container-btn" onclick=""></div>
-            <div class="basket container-btn" onclick=""></div>
+            <div class="cart container-btn" onclick=""></div>
           </div>
         </div>
         <label for="image-container" class="bottom">

@@ -24,7 +24,7 @@ function addContent(containerName) {
     container.appendChild(overlayElement);
     if (index !== 6) {
       const textElement = document.createElement("a");
-      textElement.setAttribute("href", "#");
+      textElement.setAttribute("href", "vocals_details.html");
       textElement.classList.add("inner-link");
       container.appendChild(textElement);
     }
@@ -46,7 +46,7 @@ function addContent(containerName) {
     const element = photoList[6];
 
     const textElement = document.createElement("a");
-    textElement.setAttribute("href", "vocals_details.html");
+    textElement.setAttribute("href", "vocals_page.html");
     textElement.textContent = "المزيد...";
     textElement.classList.add("more");
     element.appendChild(textElement);

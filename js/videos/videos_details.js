@@ -10,7 +10,7 @@ function addContent(containerName) {
                       </div>
                       <div class="container-buttons">
                         <div class="like container-btn" onclick=""></div>
-                        <div class="basket container-btn" onclick=""></div>
+                        <div class="cart container-btn" onclick=""></div>
                       </div>
                     </div>
                     <label for="image-container" class="time"> 00:26 </label>
@@ -28,7 +28,7 @@ function addContent(containerName) {
     container.appendChild(overlayElement);
     if (index !== 6) {
       const textElement = document.createElement("a");
-      textElement.setAttribute("href", "#");
+      textElement.setAttribute("href", "videos_details.html");
       textElement.classList.add("inner-link");
       container.appendChild(textElement);
     }
@@ -54,12 +54,12 @@ function addContent(containerName) {
     const elementVideo = element.querySelector("video");
 
     const textElement = document.createElement("a");
-    textElement.setAttribute("href", "videos_details.html");
+    textElement.setAttribute("href", "videos_page.html");
     textElement.textContent = "المزيد...";
     textElement.classList.add("more");
     element.appendChild(textElement);
 
-    element.querySelector(".overlay-element").style.display = "none";
+    element.querySelector(".overlay-element").style.visibility = "hidden";
     elementVideo.style.filter = "brightness(.4)";
   } else {
     const element = photoList[5];

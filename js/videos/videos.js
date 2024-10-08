@@ -10,7 +10,7 @@ function addContent(containerName) {
                       </div>
                       <div class="container-buttons">
                         <div class="like container-btn" onclick=""></div>
-                        <div class="basket container-btn" onclick=""></div>
+                        <div class="cart container-btn" onclick=""></div>
                       </div>
                     </div>
                     <label for="image-container" class="time"> 00:26 </label>
@@ -19,14 +19,8 @@ function addContent(containerName) {
                     </label>`;
   containers.forEach((container, index) => {
     const overlayElement = document.createElement("div");
-    // to change content according to section
-    if (containerName == ".video-container") {
-      overlayElement.innerHTML = videoHtml;
-    } else if (containerName == ".vocal-container") {
-      overlayElement.innerHTML = videoHtml;
-    } else {
-      overlayElement.innerHTML = imgHtml;
-    }
+
+    overlayElement.innerHTML = videoHtml;
 
     overlayElement.classList.add("overlay-element");
 
